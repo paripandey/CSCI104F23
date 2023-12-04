@@ -400,6 +400,7 @@ void AVLTree<Key, Value>::removeFix(AVLNode<Key,Value>* node) {
     if (abs(leftChildHeight - rightChildHeight) > 1) {
 
         AVLNode<Key,Value>* y = NULL;
+        AVLNode<Key,Value>* x = NULL;
         AVLNode<Key,Value>* parent = node->getParent();
 
         // check for zig-zig
